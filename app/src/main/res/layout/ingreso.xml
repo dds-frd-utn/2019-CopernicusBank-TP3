@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Ingreso">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/logoblanco"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copernicus Bank"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="38sp">
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txtsesion"
+                android:text="Iniciar sesión"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp"
+                />
+            <TextView
+                android:id="@+id/txtdocumento"
+                android:text="Documento Único:"
+                android:layout_below="@+id/txtsesion"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/documento"
+                android:layout_below="@id/txtdocumento"
+                android:hint="12345678"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:id="@+id/txtpassword"
+                android:text="Contraseña:"
+                android:layout_below="@+id/documento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_below="@+id/txtpassword"
+                android:hint="********"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:text="Ingresar"
+                android:layout_below="@+id/password"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
