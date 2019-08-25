@@ -1,1 +1,2 @@
-# 2019-CopernicusBank-TP3
+# Copernicus Bank DDS 2019
+Aplicación de Android
