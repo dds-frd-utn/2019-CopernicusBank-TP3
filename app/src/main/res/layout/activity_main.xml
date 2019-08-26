@@ -211,7 +211,7 @@
 
                 <TextView
                     android:textAlignment="center"
-                    android:text="Comprar un Bono"
+                    android:text="Consultar Bonos"
                     android:textColor="#000"
                     android:textSize="16sp"
                     android:textStyle="bold"
